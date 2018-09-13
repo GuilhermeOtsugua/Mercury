@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	width: auto;
+	height: 5em;
+	overflow: hidden;
+}
+
+header ol li {
+display: inline-block;
+font-family: Montserrat, sans-serif;
+color: #eee;
+margin: 1.8em 2em 1em 0em;
+float: left;
+}
+
+header ol {
+	margin: 0em 0em 0em 5.5em;
+}
+
+body {
+background-image: url("../img/hong-kong.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
