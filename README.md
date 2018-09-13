@@ -1,2 +1,2 @@
 # Mercury
-Housing platform
+Housing platform for students.
