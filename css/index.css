@@ -1,6 +1,6 @@
 html, body {
 	margin: 0;
-	height: 150%;
+	height: auto;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -93,7 +93,7 @@ header h1, h2, h3, h4 ,h5 {
 	text-align: justify;
 }
 
-.metade {
+.seção {
 	padding: 5% 5%;
 	float: left;
 	width: 40%;
@@ -103,27 +103,53 @@ header h1, h2, h3, h4 ,h5 {
 	align-content: center;
 }
 
-.metade h1 {
+.seção h1 {
 	font-size: 3em;
 	letter-spacing: 0.1em;
 	text-align: center;
 	color: #fa983a;
-	/*text-shadow: 0 0 0.1em #000;*/
+}
+
+.laranja {
+	margin-top: 8em;
+	height: auto;
+	width: 100%;
+	float:left;
+	color: #eee;
+	background-color: #fa983a;
+}
+
+.laranja p {
+	letter-spacing: 0.1em;
+	text-align: left;
+}
+
+.laranja h1 {
+	font-size: 3em;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.laranja img {
+	margin-left: 4em;
+	max-width: 40%;
+	box-shadow: 0.5em 0.5em 0.5em #000;
 }
 
 .item {
-	max-width: 25%;
+	position: relative;
+	width: 25%;
 	float: left;
-	padding: 2em;
+	padding: 2em 2em;
 }
 
 .item h3 {
-	margin: 0em 2em;
+	text-align: center;
 }
 
 .item img {
-	float: center;
-	margin-left: 4em;
+	float: left;
+	margin-left: 15%;
 	max-width: 4em;
 }
 
