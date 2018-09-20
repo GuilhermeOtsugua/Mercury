@@ -1,6 +1,6 @@
 html, body {
 	margin: 0;
-	height: 120%;
+	height: 150%;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -82,7 +82,7 @@ button:hover {
 	background-color: #fa983a70;
 }
 
-h1, h2, h3, h4 ,h5 {
+header h1, h2, h3, h4 ,h5 {
 	text-align: justify;
 	max-width: 70%;
 }
@@ -91,6 +91,40 @@ h1, h2, h3, h4 ,h5 {
 	padding: 5% 10%;
 	font-weight: bold;
 	text-align: justify;
+}
+
+.metade {
+	padding: 5% 5%;
+	float: left;
+	width: 40%;
+	height: 30em;
+	font-weight: bold;
+	text-align: justify;
+	align-content: center;
+}
+
+.metade h1 {
+	font-size: 3em;
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: #fa983a;
+	/*text-shadow: 0 0 0.1em #000;*/
+}
+
+.item {
+	max-width: 25%;
+	float: left;
+	padding: 2em;
+}
+
+.item h3 {
+	margin: 0em 2em;
+}
+
+.item img {
+	float: center;
+	margin-left: 4em;
+	max-width: 4em;
 }
 
 @keyframes grow {
