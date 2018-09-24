@@ -90,6 +90,8 @@ header h1, h2, h3, h4 ,h5 {
 .desc {
 	padding: 5% 10%;
 	font-weight: bold;
+	max-height: 100%;
+	font-size: 1.2em;
 	text-align: justify;
 }
 
@@ -97,7 +99,7 @@ section {
 	padding: 5% 5%;
 	float: left;
 	width: 40%;
-	height: 30em;
+	height: auto;
 	font-weight: bold;
 	text-align: justify;
 	align-content: center;
@@ -132,7 +134,7 @@ section h1 {
 }
 
 .laranja img {
-	margin: 2em 0 0 2.4em;
+	margin: 5em 0 0 2.4em;
 	max-width: 40%;
 	box-shadow: 0.5em 0.5em 0.5em #000;
 }
