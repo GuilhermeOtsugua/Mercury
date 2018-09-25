@@ -44,7 +44,17 @@ header:before {
 	z-index: -2;
 }
 
-header ol li {
+header h1 {
+	display: block;
+	color: #fa983a;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-shadow: 0.1em 0.1em 1em #000;
+	margin: 1.8em 2em 1em 4.2em;
+	float: left;
+}
+
+/*header ol li {
 	display: block;
 	color: #fa983a;
 	font-weight: bold;
@@ -52,7 +62,7 @@ header ol li {
 	text-shadow: 0.1em 0.1em 1em #000;
 	margin: 1.8em 2em 1em 0em;
 	float: left;
-}
+}*/
 
 header ol {
 	margin: 0em 0em 0em 5.5em;
@@ -82,7 +92,7 @@ button:hover {
 	background-color: #fa983a70;
 }
 
-header h1, h2, h3, h4 ,h5 {
+header h2{
 	text-align: justify;
 	max-width: 70%;
 }
