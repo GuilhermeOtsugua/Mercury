@@ -16,7 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('/gerenciar', function () {
-    return view('fornecedor.gerenciar');
+
+    return view('fornecedor.gerenciar')->withPropostasCriadas([
+
+        'Tabela de propostas criadas!'
+
+    ]);
+
 });
 
 Route::get('/propostas', function () {

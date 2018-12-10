@@ -28,7 +28,8 @@
 					</div>
 					<figcaption>
 						<h2>146, Av. Josefino Souza <span>Leningrado</span></h2>
-						<p>Vamos fazer o favor de não ler muito a fundo estas descrições, pois lhe faltam carinho. Obrigado!</p>
+						<p>Vamos fazer o favor de não ler muito a fundo estas descrições, 
+							pois lhe faltam carinho. Obrigado!</p>
 					</figcaption>	
 				</figure>
 				
@@ -39,7 +40,8 @@
 					</div>
 					<figcaption>
 						<h2>1782, Rua Getúlio Vargas <span>Leningrado</span></h2>
-						<p>Vamos fazer o favor de não ler muito a fundo estas descrições, pois lhe faltam carinho. Obrigado!</p>
+						<p>Vamos fazer o favor de não ler muito a fundo estas descrições, 
+							pois lhe faltam carinho. Obrigado!</p>
 					</figcaption>	
 				</figure>
 				
