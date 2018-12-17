@@ -7,20 +7,18 @@
 @section('content')
 <h2 class="sub">Fornecedores</h2>
 			<div class="container">
+			@foreach ($propostas as $proposta)
 				<figure class="proposta">
 					<img src="../img/proposta2.png"/>	
 					<div class="icons">
 						<a href="#"><img src="../img/settings.png"></a>
 					</div>
 					<figcaption>
-						<h2>58, Av. Amorosa <span>São Gonçalo</span></h2>
-						<p>Um ap. confortável perto do centro da cidade,
-							aceito pets e o wifi já está incluso no preço
-							do aluguel. Caso seja um estudante da UFRN  
-							informe...</p>
-					</figcaption>	
+					<h2>{{$proposta->rua}} <span>{{$proposta->bairro}}</span></h2>
+						<p>{{$proposta->descricao}}</p>
+					</figcaption>
 				</figure>
-				
+			@endforeach	
 				<figure class="proposta">
 					<img src="../img/proposta3.png"/>	
 					<div class="icons">

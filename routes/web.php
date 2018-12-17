@@ -17,11 +17,17 @@ Route::get('/', function () {
 
 Route::get('/gerenciar', function () {
 
-    return view('fornecedor.gerenciar')->withPropostasCriadas([
+    $propostas = \App\Proposta::all();
 
-        'Tabela de propostas criadas!'
+    return view('fornecedor.gerenciar', compact('propostas'));
 
-    ]);
+});
+
+Route::get('/gerenciar/create', function () {
+
+    $propostas = \App\Proposta::all();
+
+    return view('fornecedor.create', compact('propostas'));
 
 });
 
