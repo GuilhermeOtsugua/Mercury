@@ -1,22 +1,25 @@
 @extends('layout')
 
 @section('css') 
-	<link rel="stylesheet" href="../css/fornecedor.css">
+	<link rel="stylesheet" href="../css/forms.css">
 @endsection
 
 @section('content')
 <h2 class="sub">Fornecedores</h2>
+<div class="container">
+    <form method="POST" action="/gerenciar">
+        @csrf
+        
+            <input type="text" name="rua" placeholder="Rua:">
+       
+            <input type="text" name="bairro" placeholder="Bairro:">
 
-<form>
-    <div>
-        <input type="text" name="rua">
-    </div>
-    <div>
-        <input type="text" name="bairro">
-    </div>
-    <div>
-        <button type="submit">Criar Proposta</button>
-    </div>
-</form>
-			
+            <input type="text" name="descricao" placeholder="Descrição/Resumo:">
+
+            <input type="number" name="preco" placeholder="Preço:">
+     
+            <button type="submit">Criar Proposta</button>
+
+        </form>
+</div>			
 @endsection

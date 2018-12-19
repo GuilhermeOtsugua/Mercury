@@ -13,7 +13,7 @@ header {
 	justify-content: left;
 	align-items: flex-start;
 	align-content: flex-start;
-	height: 47.25vw;
+	min-height: 47.25vw;
 	overflow: hidden;
 	color: #eee;
 }

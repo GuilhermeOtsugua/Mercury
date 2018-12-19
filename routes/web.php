@@ -11,15 +11,32 @@
 |
 */
 
+use \App\Proposta;
+
 Route::get('/', function () {
     return view('index');
 });
 
 Route::get('/gerenciar', function () {
 
-    $propostas = \App\Proposta::all();
+    $propostas = Proposta::all();
 
     return view('fornecedor.gerenciar', compact('propostas'));
+
+});
+
+Route::post('/gerenciar', function () {
+
+    $proposta = new Proposta();
+
+    $proposta->rua = request('rua');
+    $proposta->bairro = request('bairro');
+    $proposta->descricao = request('descricao');
+    $proposta->preco = request('preco');
+
+    $proposta->save();
+
+    return redirect('/gerenciar');
 
 });
 

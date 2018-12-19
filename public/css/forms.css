@@ -5,7 +5,17 @@ html, body {
 	height: auto;
 	font-family: Montserrat, sans-serif;
 }
-
+input {
+	padding: 2.5%;
+	border: 1px solid #ccc;
+	border-radius: 300px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #000;
+	font-size: 125%;
+}
 header {
 	position: relative;
 	display: flex;
@@ -17,7 +27,12 @@ header {
 	overflow: hidden;
 	color: #eee;
 }
-
+.container {
+	position: relative;
+	width: 25%;
+	margin-top: 17%;
+	height: auto;
+}
 header:after {
 	content: "";
 	width: 100%;
@@ -84,6 +99,18 @@ button:hover {
 	background-color: #fa983a70;
 }
 
+header h2.sub{
+	position: absolute;
+	top: 2.4em;
+	left: 7em;
+	display: block;
+	font-weight: lighter;
+	font-size: 1em;
+	text-shadow: 0.1em 0.1em 1em #000;
+	margin: 1.8em 2em 1em 4.2em;
+	float: left;
+}
+
 header h2{
 	text-align: justify;
 	max-width: 70%;
@@ -94,12 +121,7 @@ header h2{
 	50% {transform: scale(1.2)}
 }
 
-.container {
-	position: relative;
-	width: 100%;
-	margin-top: 7%;
-	height: 70%;
-}
+
 
 figure.proposta {
 	font-family: 'Montserrat', Arial, sans-serif;
@@ -159,13 +181,13 @@ figure.proposta figcaption p {
 figure.proposta .icons {
 	padding: 5px;
 	position: absolute;
-	left: 50%;
-	top: 80%;
+	left: 62.5%;
+	top: 50%;
 	padding-left: 30px;
 	transform: translateY(-50%);
 }
-figure.proposta .icons img{
-	max-width: 4em;
+figure.proposta .icons img {
+	font-size: 32px;
 	padding: 10px;
 	color: #ffffff;
 	opacity: 0;
@@ -174,13 +196,13 @@ figure.proposta .icons img{
 	transition: all 0.35s;
 	transform: translateX(50px);
 }
-figure.proposta .icons a:first-child img{
+figure.proposta .icons a:first-child img {
   transition-delay: 0.2s;
 }
-figure.proposta .icons a:nth-child(2) img{
+figure.proposta .icons a:nth-child(2) img {
   transition-delay: 0.1s;
 }
-figure.proposta .icons a:nth-child(3) img{
+figure.proposta .icons a:nth-child(3) img {
   transition-delay: 0s;
 }
 figure.proposta:after {
@@ -201,19 +223,19 @@ figure.proposta.hover > img {
   transform: scale(1.1);
 }
 figure.proposta:hover img,
-figure.proposta.hover img{
-  opacity: 0.9;
+figure.proposta.hover img {
+  opacity: 0.8;
   transform: translate(0);
 }
 figure.proposta:hover a:first-child img,
-figure.proposta.hover a:first-child img{
+figure.proposta.hover a:first-child img {
   transition-delay: 0.1s;
 }
 figure.proposta:hover a:nth-child(2) img,
-figure.proposta.hover a:nth-child(2) img{
+figure.proposta.hover a:nth-child(2) img {
   transition-delay: 0.2s;
 }
 figure.proposta:hover a:nth-child(3) img,
-figure.proposta.hover a:nth-child(3) img{
+figure.proposta.hover a:nth-child(3) img {
   transition-delay: 0.3s;
 }
