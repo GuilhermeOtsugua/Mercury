@@ -42,7 +42,7 @@ Route::post('/gerenciar', function () {
 
 Route::get('/gerenciar/create', function () {
 
-    $propostas = \App\Proposta::all();
+    $propostas = Proposta::all();
 
     return view('fornecedor.create', compact('propostas'));
 
