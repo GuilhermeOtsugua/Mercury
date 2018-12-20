@@ -11,13 +11,13 @@
         @csrf
         @method('PATCH')
         
-            <input type="text" name="rua" placeholder="Rua:" value="{{ $proposta->rua }}">
+            <input type="text" name="rua" placeholder="Rua:" value="{{ $proposta->rua }}" required>
        
-            <input type="text" name="bairro" placeholder="Bairro:" value="{{ $proposta->bairro }}">
+            <input type="text" name="bairro" placeholder="Bairro:" value="{{ $proposta->bairro }}" required>
 
-            <textarea name="descricao" placeholder="Descrição/Resumo:">{{ $proposta->descricao }}</textarea>
+            <textarea name="descricao" placeholder="Descrição/Resumo:" required>{{ $proposta->descricao }}</textarea>
 
-            <input type="number" name="preco" placeholder="Preço:" value="{{ $proposta->preco }}">
+            <input type="number" name="preco" placeholder="Preço:" value="{{ $proposta->preco }}" required>
      
             <button type="submit">Editar Proposta</button>
 

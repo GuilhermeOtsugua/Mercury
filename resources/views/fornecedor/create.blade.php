@@ -10,13 +10,13 @@
     <form method="POST" action="/gerenciar">
         @csrf
         
-            <input type="text" name="rua" placeholder="Rua:">
+            <input type="text" name="rua" placeholder="Rua:" required>
        
-            <input type="text" name="bairro" placeholder="Bairro:">
+            <input type="text" name="bairro" placeholder="Bairro:" required>
 
-            <input type="text" name="descricao" placeholder="Descrição/Resumo:">
+            <input type="text" name="descricao" placeholder="Descrição/Resumo:" required>
 
-            <input type="number" name="preco" placeholder="Preço:">
+            <input type="number" name="preco" placeholder="Preço:" required>
      
             <button type="submit">Criar Proposta</button>
 

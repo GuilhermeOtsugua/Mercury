@@ -11,7 +11,7 @@
 				<figure class="proposta">
 					<img src="../img/proposta2.png"/>	
 					<div class="icons">
-						<a href="#"><img src="../img/settings.png"></a>
+						<a href="/gerenciar/{{ $proposta->id }}/edit"><img src="../img/settings.png"></a>
 					</div>
 					<figcaption>
 					<h2>{{$proposta->rua}} <span>{{$proposta->bairro}}</span></h2>
