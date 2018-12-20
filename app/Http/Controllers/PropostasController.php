@@ -37,7 +37,7 @@ class PropostasController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
         $proposta = new Proposta();
 
@@ -68,9 +68,10 @@ class PropostasController extends Controller
      * @param  \App\Proposta  $proposta
      * @return \Illuminate\Http\Response
      */
-    public function edit(Proposta $proposta)
+    public function edit($id)
     {
-        //
+        $proposta = Proposta::findOrFail($id);
+        return view('fornecedor.edit', compact('proposta'));
     }
 
     /**
@@ -80,9 +81,18 @@ class PropostasController extends Controller
      * @param  \App\Proposta  $proposta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Proposta $proposta)
+    public function update($id)
     {
-        //
+        $proposta = Proposta::findOrFail($id);
+
+        $proposta->rua = request('rua');
+        $proposta->bairro = request('bairro');
+        $proposta->descricao = request('descricao');
+        $proposta->preco = request('preco');
+
+        $proposta->save();
+
+        return redirect('/gerenciar');
     }
 
     /**
@@ -91,8 +101,10 @@ class PropostasController extends Controller
      * @param  \App\Proposta  $proposta
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Proposta $proposta)
+    public function destroy($id)
     {
-        //
+        Proposta::findOrFail($id)->delete();
+
+        return redirect('/gerenciar');
     }
 }

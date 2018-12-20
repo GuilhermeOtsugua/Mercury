@@ -5,17 +5,31 @@ html, body {
 	height: auto;
 	font-family: Montserrat, sans-serif;
 }
+
 input {
 	padding: 2.5%;
 	border: 1px solid #ccc;
 	border-radius: 300px;
-	margin-bottom: 10px;
+	margin-bottom: 1.9%;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: montserrat;
 	color: #000;
 	font-size: 125%;
 }
+
+textarea {
+	padding: 2.5%;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	margin-bottom: 1.9%;
+	width: 150%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #000;
+	font-size: 125%;
+}
+
 header {
 	position: relative;
 	display: flex;
@@ -27,12 +41,14 @@ header {
 	overflow: hidden;
 	color: #eee;
 }
+
 .container {
 	position: relative;
 	width: 25%;
-	margin-top: 17%;
+	margin-top: 13%;
 	height: auto;
 }
+
 header:after {
 	content: "";
 	width: 100%;
@@ -82,8 +98,17 @@ header ol {
   	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
 }
 
+.red {
+	background-color: #ff000056;
+	border: 0.1em solid #b60000;
+}
+
+.red:hover {
+	background-color: #ff0000b2;
+}
+
 button {
-	background-color: #fa973a33;
+	background-color: #fa973a56;
 	border: 0.1em solid #fa983a;
 	border-radius: 0.3em;
 	color: inherit;
@@ -93,10 +118,11 @@ button {
 	display: inline-block;
 	transition-duration: 0.4s;
 	cursor: pointer;
+	margin-bottom: 2%;
 }
 
 button:hover {
-	background-color: #fa983a70;
+	background-color: #fa973ab2;
 }
 
 header h2.sub{
