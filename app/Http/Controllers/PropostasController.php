@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Proposta;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class PropostasController extends Controller
@@ -40,7 +41,9 @@ class PropostasController extends Controller
 
     public function show($id)
     {
-        // Mostrar Proposta, incluindo tags, participantes e fornecedor criador.
+        $proposta = Proposta::findOrFail($id);
+        $tags = [Tag::findOrFail($id)];
+        return view('fornecedor.show', compact('proposta', 'tags'));
     }
 
     public function edit($id)

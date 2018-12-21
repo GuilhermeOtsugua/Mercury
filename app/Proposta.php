@@ -11,4 +11,8 @@ class Proposta extends Model
     public function tags() {
         return $this->hasMany(Tag::class);
     }
+
+    public function estudantes() {
+        return $this->hasMany(Estudante::class);
+    }
 }
